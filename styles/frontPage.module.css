@@ -1,0 +1,41 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-color: #000;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.wrapper::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.04;
+  background-image: url("../public/assets/kenya-flag-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.introText {
+  color: rgb(239 249 255);
+  font-size: 80px;
+  text-align: center;
+  padding: 200px 0 0 0;
+  font-family: "Unica One", cursive;
+}
+
+.button {
+  background: rgb(239 249 255);
+  height: 30px;
+  margin: 20px;
+  text-align: center;
+}
