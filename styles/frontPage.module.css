@@ -3,7 +3,6 @@
   width: 100vw;
   background-size: cover;
   background-color: #000;
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -29,13 +28,27 @@
   color: rgb(239 249 255);
   font-size: 80px;
   text-align: center;
-  padding: 200px 0 0 0;
-  font-family: "Unica One", cursive;
+  padding: 130px 30px 0;
+  font-family: "Righteous", cursive;
 }
 
 .button {
   background: rgb(239 249 255);
-  height: 30px;
+  padding: 10px 25px;
   margin: 20px;
   text-align: center;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.homeButtonBig {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: lowercase;
 }
