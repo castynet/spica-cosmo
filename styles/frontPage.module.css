@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   background-size: cover;
-  background-color: #12263c;
+  background-color: var(--navyBlue);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 .introText {
-  color: rgb(239 249 255);
+  color: var(--aliceBlue);
   font-size: 80px;
   text-align: center;
   padding: 130px 30px 0;
@@ -34,7 +34,7 @@
 }
 
 .button {
-  background: rgb(239 249 255);
+  background: var(--aliceBlue);
   padding: 10px 25px;
   margin: 20px;
   text-align: center;
@@ -49,7 +49,7 @@
   transition: all 500ms;
 
   background-repeat: no-repeat;
-  border: 2px solid rgb(239 249 255);
+  border: 2px solid var(--aliceBlue);
 }
 
 .homeButtonBig {
@@ -70,7 +70,7 @@
 }
 
 .homeButtonBig:hover {
-  color: rgb(239 249 255);
+  color: var(--aliceBlue);
   background-position: 0 -90px;
 }
 
@@ -83,15 +83,28 @@
     to top,
     transparent 0%,
     transparent 50%,
-    black 50%,
-    black 100%
+    var(--chelseaBlue) 50%,
+    var(--chelseaBlue) 100%
   );
   background-position: 0 top;
   background-size: 1000px 0px;
 }
 
-.homeButtonNormal:hover {
-  color: white;
+.homeButtonSignUp {
+  background-image: linear-gradient(
+    to top,
+    transparent 0%,
+    transparent 50%,
+    var(--orange) 50%,
+    var(--orange) 100%
+  );
+  background-position: 0 top;
+  background-size: 1000px 0px;
+}
+
+.homeButtonNormal:hover,
+.homeButtonSignUp:hover {
+  color: var(--aliceBlue);
   background-position: 0 top;
   background-size: 1000px 180px;
 }
