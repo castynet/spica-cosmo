@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   background-size: cover;
-  background-color: #000;
+  background-color: #12263c;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -22,6 +22,7 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
+  pointer-events: none;
 }
 
 .introText {
@@ -45,10 +46,52 @@
   letter-spacing: 0.5px;
   display: inline-flex;
   align-items: center;
+  transition: all 500ms;
+
+  background-repeat: no-repeat;
+  border: 2px solid rgb(239 249 255);
 }
 
 .homeButtonBig {
   font-size: 25px;
   font-weight: 600;
   text-transform: lowercase;
+  letter-spacing: 0.1px;
+  transition: all 500ms;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    black 50%,
+    black 100%
+  );
+  background-position: 0 0;
+  background-size: 1000px 180px;
+}
+
+.homeButtonBig:hover {
+  color: rgb(239 249 255);
+  background-position: 0 -90px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.homeButtonNormal {
+  background-image: linear-gradient(
+    to top,
+    transparent 0%,
+    transparent 50%,
+    black 50%,
+    black 100%
+  );
+  background-position: 0 top;
+  background-size: 1000px 0px;
+}
+
+.homeButtonNormal:hover {
+  color: white;
+  background-position: 0 top;
+  background-size: 1000px 180px;
 }
