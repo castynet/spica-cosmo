@@ -17,7 +17,7 @@ export default function frontPage() {
             Sign-in &nbsp;
             <Icons.Lock size="23" />
           </button>
-          <button className={`${s.button} ${s.homeButtonNormal}`}>
+          <button className={`${s.button} ${s.homeButtonSignUp}`}>
             Sign-up &nbsp;
             <Icons.LockOpen size="23" />
           </button>
