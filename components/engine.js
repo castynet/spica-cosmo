@@ -6,12 +6,16 @@ export function Year() {
 }
 
 export function SwitchPage() {
-  var layers = document.getElementsByClassName("layer");
+  // used by => | 1. frontPage |
+  var layers = document.querySelectorAll("[data-layer]");
   for (const layer of layers) {
-    layer.classList.toggle("active");
+    layer.style.width = "100vw";
+    layer.classList.toggle("activeLayer");
   }
-  const lastLayer = document.querySelector(".layerTwo");
+  const lastLayer = document.querySelector("[data-layer='2']");
   lastLayer.addEventListener("transitionend", () => {
-    console.log("Transition ended");
+    for (const layer of layers) {
+      layer.style.width = "0";
+    }
   });
 }
