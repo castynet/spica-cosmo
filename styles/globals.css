@@ -13,6 +13,7 @@ body {
   margin: 0;
   background: #b8e4ff;
   font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
 }
 
 * {
@@ -34,7 +35,10 @@ a:focus,
 button:active,
 button:focus {
   outline: 0;
-  border: none;
   outline-style: none;
   -moz-outline-style: none;
+}
+
+.activeLayer {
+  top: -100% !important;
 }
