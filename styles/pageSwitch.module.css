@@ -1,22 +1,21 @@
 .layer {
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 100%;
   top: 100%;
   left: 0;
   bottom: auto;
   right: auto;
-  background: #48466d;
-  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background: var(--chelseaBlue);
+  transition: width 0s, top 0.7s cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+  margin: 0;
 }
-.layer.active {
-  top: -100%;
-}
+
 .layerOne {
-  background: #ecf3a3;
-  transition-delay: 0.12s;
+  background: var(--orange);
+  transition-delay: 0.42s;
 }
 .layerTwo {
-  background: #95a792;
-  transition-delay: 0.4s;
+  background: var(--navyBlue);
+  transition-delay: 0.7s;
 }
