@@ -1,12 +1,13 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  background: var(--babyBlue);
 }
 
 .cardSection {
-  margin: 50px 0 0;
   display: flex;
   flex-wrap: wrap;
-  width: 900px;
+  max-width: 1200px;
+  justify-content: center;
 }
