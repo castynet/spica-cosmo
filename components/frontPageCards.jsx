@@ -1,13 +1,16 @@
 import React from "react";
-import styled from "styled-components";
+import styles from "../styles/frontPageCards.module.css";
 
-import Card from "./person-card.jsx";
-import SideBarA from "./side-bar-a";
+import Card from "./personCard";
+import SideBar from "./sideBar";
 
-export default function frontPageCards(){
-  return(<>
-        <Wrapper>
-        <CardsSection>
+export default function frontPageCards() {
+  const s = styles;
+
+  return (
+    <>
+      <div className={s.wrapper}>
+        <div className={s.cardSection}>
           <Card />
           <Card />
           <Card />
@@ -28,20 +31,8 @@ export default function frontPageCards(){
           <Card />
           <Card />
           <Card />
-        </CardsSection>
-        <SideBarA />
-      </Wrapper></>)
+        </div>
+      </div>
+    </>
+  );
 }
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-`;
-
-const CardsSection = styled.div`
-  margin: 50px 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  width: 900px;
-`;
