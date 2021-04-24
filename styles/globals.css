@@ -5,13 +5,37 @@
   --chelseaBlue: #034694;
   --navyBlue: #002244;
   --aliceBlue: #f0f8ff;
+  --babyBlue: #89cff0;
+}
+
+html::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--babyBlue);
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--babyBlue);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--navyBlue);
+}
+
+html::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: grey;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  background: #b8e4ff;
+  background: black;
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
 }
