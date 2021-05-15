@@ -1,8 +1,7 @@
 .wrapper {
   width: 250px;
   height: 90vh;
-  position: sticky;
-  top: 5vh;
+  position: fixed;
   right: 20px;
   float: right;
   border-radius: 10px;
