@@ -10,12 +10,86 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
 }
 
 .loginWrap {
   background-color: var(--aliceBlue);
   width: 400px;
-  height: 500px;
+  padding: 30px;
   border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.title {
+  text-align: center;
+}
+
+.lblUsername,
+.lblPass {
+  display: inline-block;
+  padding: 20px 5px 2px;
+}
+
+.username,
+.pass {
+  height: 30px;
+  margin: 0 5px;
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
+  font-size: 0.8em;
+  color: var(--navyBlue);
+}
+
+.withGoogle {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 0.8em;
+  transition: all 0.1s linear;
+  padding: 10px 0;
+}
+
+.withGoogle:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.register,
+.resetPass {
+  display: inline-block;
+  font-size: 0.75em;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-decoration: underline;
+  color: var(--chelseaBlue);
+}
+
+.register:hover,
+.resetPass:hover {
+  cursor: pointer;
+  color: var(--navyBlue);
+}
+
+.close {
+  float: right;
+  margin-top: -106%;
+  margin-right: -6%;
+  background-color: red;
+  height: 35px;
+  border-radius: 50%;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--aliceBlue);
+  transition: all 0.1s linear;
+}
+
+.close:hover {
+  cursor: pointer;
+
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
