@@ -47,6 +47,8 @@ body {
 
 button {
   border-radius: 1000px;
+  outline: none;
+  border: none;
 }
 
 a {
